@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roberto Fernandes</title>
+</head>
+<body>
+    <script src="./variaveis.js"></script>
+    <header>
+        <div>
+            <img src="./logo.webp" alt="Logo" width="250" height="125">
+        </div>
+        <ul>
+            <li>  <!--target="_blank" abri o link em nova aba!-->
+                <a target="_blank" href="https://github.com/Robertofernandesrecdev">github</a>
+            </li>
+            <li>
+                <a target="_blank" href="mailto:robertofernandes1@gmail.com">email</a>
+            </li>
+            <li>
+                <a target="_blank" href="https://wa.me/81997517239">whatsapp</a>
+            </li>
+            
+        </ul>
+    </header>
+    <main>
+        <section class="container">
+            <div class="name">
+                <h1>Roberto Fernandes</h1>
+                <h5>Dev Fullstack Junior </h5>
+            </div>
+            <div onclick="displayAbout()" id="arrow">
+                <img id="animation" src="./caret-up-solid.svg" width="20" height="20">
+            </div>
+
+            <div style="display: none;" id="about">
+                <p >
+                    Formado em Analise e desenvolvimento de Sistemas, Apaixonado por tecnologia.
+                    Desenvolvo tanto no front-end como no back-end, Já trabalhei com projetos em Javascript, 
+                    Nodejs, Mongodb, Postgress, MySql, React e HTML/CSS, minhas experiências por conta 
+                    própria, tenho um ano e meio de experiência com desenvolvimento web. Gosto de estudar 
+                    novas tecnologias, Atualmente estou estudando Git, Nodejs, React, Redux, Nextjs React-Native 
+                    e Typescript  mais a fundo.</p>
+                    <g id="texto">Cursos extras-curriculares:
+                    Cursando Fabrica de Aplicativos, curso Fullstack Developer focado em React, React-Native, 
+                    typescript, Nodejs, banco relacionais e não relacionais.<br> 
+                    Bootcamp Inter-DIO dez/2021 – fev/2022
+                    Inter Frontend Developer realizado pela DIO com foco em desenvolvimento frontend, 
+                    pontos abordados consumo e integração de api´s, requisições http, integração com SGBD, 
+                    criar um ambiente harmonioso e responsivo para o cliente.<br>
+                    Bootcamp Spread-DIO nov/2021 – jan/2022 
+                    Spread Java Developer realizado pela DIO com foco em formar Fullstack, com abordagens 
+                    em JAVA, Springboot, bancos de dados relacionais e não relacionais, pontos mais abordados 
+                    foi criação de api´s com integração com SGBD e consumo de outras api´s e requisições http.</g>                
+            </div>
+            <div class="form">
+                <div>
+                    <p>Deixe seu contato!</p>
+                </div>
+                <form action="https://api.staticforms.xyz/submit" method="post">
+                    <input type="hidden" name="accessKey" value="41fcfe23-be16-4bdc-85c6-e92e50a3c471">
+                    <input type="hidden" name="redirectTo" value="https://example.com/contact/success">
+                    <input type="email" name="email" placeholder="deixe seu email :)" required>
+                    <button >Enviar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+   
+    <script>
+        function displayAbout(){
+            var arrow = document.getElementById('animation');
+            arrow.classList.toggle('rotate');
+            var display = document.getElementById('about');
+            display.classList.toggle('active');
+        }
+    </script>
+
+</body>
+
+
+</html>
+
