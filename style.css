@@ -2,13 +2,15 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    color: black;
+    color: white;
     /* font-weight: bold;*/
     font-family: 'Roboto', sans-serif;
 }
 
 ul{
     list-style: none;
+    
+  
 
     
 }
@@ -16,13 +18,17 @@ ul{
 a{
     text-decoration: none;
     font-weight: 700;
+    padding: auto;
+    
 }
+
 
 body{
     /*background-image: url(./ti.jpg);
     background-repeat: no-repeat;
-    background-position: center center fixed;*/
-    background: url(./ti.jpg) no-repeat center center fixed;
+    background-position: center center fixed;
+    /*background: url(./ti.jpg) no-repeat center center fixed;*/
+    background-color: #4b4949;
     background-size: cover;
 }
 
@@ -39,11 +45,15 @@ header {
 
 header ul  {
     display: flex;
+    
    
 }
 
 header ul li {
     padding: 5px;
+    display:inline-block;
+    vertical-align:top;
+    
     /* border-right: 2px dashed rgb(20, 145, 247); */
 }
 
@@ -54,11 +64,14 @@ header ul li a:hover {
 header ul li a:hover {
    color: #efc900;
    text-decoration: underline;
+   
 }
 
 header ul li:first-child  {
     /* border-left: 2px dashed rgb(20, 145, 247); */
 }
+
+
 
 .container{
     text-align: center;
@@ -87,6 +100,7 @@ header ul li:first-child  {
 
 #animation {
     transition: 300ms;
+
 }
 
 .rotate {
@@ -122,7 +136,7 @@ header ul li:first-child  {
     width: 15%;
     padding: 5px 10px;
     /* background-color: #efc900; */
-    background: linear-gradient(to right,  mediumblue 50%, #efc900 50%);
+    background: linear-gradient(to right,  rgb(8, 8, 8) 50%, #efc900 50%);
     background-size: 200% 100%;
     background-position: right bottom;
     color: #464646;
