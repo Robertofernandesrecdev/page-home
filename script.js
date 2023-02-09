@@ -50,7 +50,22 @@ async function search(city) {
 function clickButton() {
     let city = document.querySelector(".ctext").value
     search(city)
-}
+
+      };
+
+      /*foi preciso adicionar um ouvinte de eventos no botão que ficará responsável por "escutar" 
+      quando a tecla enter for pressionada.Cada tecla possui um código identificador, o código da tecla enter é 13,
+    então quando um evento acontecer com o código 13 quer dizer que a tecla enter foi pressionada, e se isso acontecer
+       nós temos uma condição para executar a função  clickButton()*/
+      var button = document.querySelector(".ctext");
+      button.addEventListener('keypress', function(event){
+        if(event.keyCode == 13) {
+          event.preventDefault();
+          clickButton();
+        }
+      });
+
+
 
 
 
