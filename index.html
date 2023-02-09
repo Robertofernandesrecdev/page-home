@@ -1,33 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt_br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css" >
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500&display=swap"
+        rel="stylesheet">
     <script src="script.js" defer> </script>
     <title>Roberto Fernandes</title>
 </head>
+
 <body>
     <script src="./variaveis.js"></script>
     <header>
-        <div>
-            <img src="./logo.webp" alt="Logo" width="250" height="125">
+        <div class="imgr">
+            <input class="ctext" placeholder="digite a cidade..">
+            <button onclick="clickButton()" class="button1">
+                <img class="lupa" src="https://www.svgrepo.com/show/488200/find.svg">
+            </button>
+
+            <div class="img2">
+                <h2 class="city">Tempo</h2>
+                <p class="temp">28°C</p>
+
+                <div class="box">
+                    <img class="icone" src="https://openweathermap.org/img/wn/04n.png">
+                    <p class="descricao">Nuvens Dispersas</p>
+                </div>
+
+                <p class="umi">Umidade: 70%</p>
+            </div>
         </div>
+        <!--<div class="imglogo">
+            <img src="./logo.webp" alt="Logo" width="250" height="125">
+        </div>!-->
         <ul>
-            <li>  <!--target="_blank" abri o link em nova aba!-->
-                <a target="_blank" href="https://github.com/Robertofernandesrecdev"><img src="./square-github-brands.svg" width="25" height="25" alt="github" title="github"></a>
+            <li> <!--target="_blank" abri o link em nova aba!-->
+                <a target="_blank" href="https://github.com/Robertofernandesrecdev"><img
+                        src="./square-github-brands.svg" width="25" height="25" alt="github" title="github"></a>
             </li>
             <li>
-                <a target="_blank" href="mailto:robertofernandes1@gmail.com"><img src="./at-solid.svg" width="25" height="25" alt="e-mail" title="e-mail"></a>
+                <a target="_blank" href="mailto:robertofernandes1@gmail.com"><img src="./at-solid.svg" width="25"
+                        height="25" alt="e-mail" title="e-mail"></a>
             </li>
             <li>
-                <a target="_blank" href="https://wa.me/81997517239"><img src="./whatsapp-brands.svg" width="25" height="25" alt="whatsapp" title="whatsapp"> </a>
+                <a target="_blank" href="https://wa.me/81997517239"><img src="./whatsapp-brands.svg" width="25"
+                        height="25" alt="whatsapp" title="whatsapp"> </a>
             </li>
-            
+
         </ul>
     </header>
     <main>
@@ -38,52 +67,57 @@
             </div>
             <div onclick="displayAbout()" id="arrow">
                 <img id="animation" src="./caret-up-solid.svg" width="20" height="20">
-               
+
             </div>
 
             <div style="display: none;" id="about">
-                <p >
+                <p>
                     Formado em Analise e desenvolvimento de Sistemas, Apaixonado por tecnologia.
-                    Desenvolvo tanto no front-end como no back-end, Já trabalhei com projetos em Javascript, 
-                    Nodejs, Mongodb, Postgress, MySql, React e HTML/CSS, minhas experiências por conta 
-                    própria, tenho um ano e meio de experiência com desenvolvimento web. Gosto de estudar 
-                    novas tecnologias, Atualmente estou estudando Git, Nodejs, React, Redux, Nextjs React-Native 
-                    e Typescript  mais a fundo.</p>
-                    <div class="carrossel">
-                        <div class="foto" id="img">
-                            <a target="_blank" href="https://www.dio.me/certificate/5912BC15/share"><img  src="./inter.png" width="300" height="170"></a> 
-                            <a target="_blank" href="https://www.dio.me/certificate/96E808CE/share"><img  src="./spreadJava.png" width="300" height="170"></a>
-                            <a target="_blank" href="https://www.dio.me/certificate/305F58AB/share"><img  src="./eduzz.png" width="300" height="170"></a>
-                            <a target="_blank" href="https://www.hiringcoders.com.br/"><img  src="./hiringcoders.png" width="300" height="170"></a>
-                        </div>
+                    Desenvolvo tanto no front-end como no back-end, Já trabalhei com projetos em Javascript,
+                    Nodejs, Mongodb, Postgress, MySql, React e HTML/CSS, minhas experiências por conta
+                    própria, tenho um ano e meio de experiência com desenvolvimento web. Gosto de estudar
+                    novas tecnologias, Atualmente estou estudando Git, Nodejs, React, Redux, Nextjs React-Native
+                    e Typescript mais a fundo.</p>
+                <div class="carrossel">
+                    <div class="foto" id="img">
+                        <a target="_blank" href="https://www.dio.me/certificate/5912BC15/share"><img src="./inter.png"
+                                width="300" height="170"></a>
+                        <a target="_blank" href="https://www.dio.me/certificate/96E808CE/share"><img
+                                src="./spreadJava.png" width="300" height="170"></a>
+                        <a target="_blank" href="https://www.dio.me/certificate/305F58AB/share"><img src="./eduzz.png"
+                                width="300" height="170"></a>
+                        <a target="_blank" href="https://www.hiringcoders.com.br/"><img src="./hiringcoders.png"
+                                width="300" height="170"></a>
                     </div>
+                </div>
 
-                    <g id="texto">Cursos extras-curriculares:
-                    Cursando Fabrica de Aplicativos, curso Fullstack Developer focado em React, React-Native, 
-                    typescript, Nodejs, banco relacionais e não relacionais.<br> 
+                <g id="texto">Cursos extras-curriculares:
+                    Cursando Fabrica de Aplicativos, curso Fullstack Developer focado em React, React-Native,
+                    typescript, Nodejs, banco relacionais e não relacionais.<br>
                     <br>
                     Bootcamp Inter-DIO dez/2021 – fev/2022
-                    Inter Frontend Developer realizado pela DIO com foco em desenvolvimento frontend, 
-                    pontos abordados consumo e integração de api´s, requisições http, integração com SGBD, 
+                    Inter Frontend Developer realizado pela DIO com foco em desenvolvimento frontend,
+                    pontos abordados consumo e integração de api´s, requisições http, integração com SGBD,
                     criar um ambiente harmonioso e responsivo para o cliente.<br>
                     <br>
-                    Bootcamp Spread-DIO nov/2021 – jan/2022 
-                    Spread Java Developer realizado pela DIO com foco em formar Fullstack, com abordagens 
-                    em JAVA, Springboot, bancos de dados relacionais e não relacionais, pontos mais abordados 
+                    Bootcamp Spread-DIO nov/2021 – jan/2022
+                    Spread Java Developer realizado pela DIO com foco em formar Fullstack, com abordagens
+                    em JAVA, Springboot, bancos de dados relacionais e não relacionais, pontos mais abordados
                     foi criação de api´s com integração com SGBD e consumo de outras api´s e requisições http.
                     <br> <br>
                     Bootcamp Eduzz Fullstack-DIO març/2022
-                    Eduzz Fullstack Developer realizado pela DIO com foco em desenvolvimento Fullstack, 
-                    pontos abordados consumo e integração de api´s, requisições http, integração com SGBD, 
-                    criar um ambiente harmonioso e responsivo para o cliente.<br> 
+                    Eduzz Fullstack Developer realizado pela DIO com foco em desenvolvimento Fullstack,
+                    pontos abordados consumo e integração de api´s, requisições http, integração com SGBD,
+                    criar um ambiente harmonioso e responsivo para o cliente.<br>
                     <br>
                     Treinamento hiringcoders Nível 1 - Front End
-                    Aulas assíncronas, lives técnicas com empresas especialistas e professores para tirar suas dúvidas, 
+                    Aulas assíncronas, lives técnicas com empresas especialistas e professores para tirar suas dúvidas,
                     sobre HTML, CSS, Bootstrap, JavaScript, React, entre outros. <br> <br>
                     Nível 2 - Back End
                     Aulas assíncronas, lives técnicas com empresas especialistas e professores para tirar suas dúvidas,
-                    sobre dados, arquitetura, testes, etc. No final deste treinamento você também passará por uma prova 
-                    técnica que lhe permitirá ir para a próxima fase do processo</g>                
+                    sobre dados, arquitetura, testes, etc. No final deste treinamento você também passará por uma prova
+                    técnica que lhe permitirá ir para a próxima fase do processo
+                </g>
             </div>
             <div class="form">
                 <div>
@@ -98,10 +132,10 @@
             </div>
         </section>
     </main>
-    
-   
+
+
     <script>
-        function displayAbout(){
+        function displayAbout() {
             var arrow = document.getElementById('animation');
             arrow.classList.toggle('rotate');
             var display = document.getElementById('about');
@@ -113,4 +147,3 @@
 
 
 </html>
-
