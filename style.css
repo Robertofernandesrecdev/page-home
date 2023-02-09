@@ -9,17 +9,12 @@
 
 ul{
     list-style: none;
-    
-  
-
-    
 }
 
 a{
     text-decoration: none;
     font-weight: 700;
     padding: auto;
-    
 }
 
 
@@ -46,15 +41,12 @@ header {
 
 header ul  {
     display: flex;
-    
-   
 }
 
 header ul li {
     padding: 5px;
     display:inline-block;
     vertical-align:top;
-    
     /* border-right: 2px dashed rgb(20, 145, 247); */
 }
 
@@ -72,15 +64,12 @@ header ul li:first-child  {
     /* border-left: 2px dashed rgb(20, 145, 247); */
 }
 
-
-
 .container{
     text-align: center;
 }
 
 .container .name h1 {
     font-size: 60px;
-  
 }
 
 .container .name h5 {
@@ -101,7 +90,6 @@ header ul li:first-child  {
 
 #animation {
     transition: 300ms;
-
 }
 
 .rotate {
@@ -220,9 +208,6 @@ header ul li:first-child  {
     object-fit: cover;
     height: 170px;
     width: 300px;
-    
-    
-
 }
 
 .imgr{
@@ -234,7 +219,6 @@ header ul li:first-child  {
     padding: 20px;
     border-radius: 20px; 
     opacity: 0.8 ; /*transparencia*/
-
 }
 
 .img2{
@@ -274,7 +258,6 @@ h2{
 
 .lupa{
     height: 20px;
-
 }
 
 .button1{

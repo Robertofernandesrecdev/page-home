@@ -24,7 +24,7 @@ function screen(dados) {
     document.querySelector(".city").innerHTML = "Tempo em  " + dados.name
     document.querySelector(".temp").innerHTML = Math.floor(dados.main.temp) + "°C"
     document.querySelector(".descricao").innerHTML = dados.weather[0].description
-    document.querySelector(".umi").innerHTML = dados.main.humidity + "%"
+    document.querySelector(".umi").innerHTML = "Umidade " + dados.main.humidity + "%"
     //vai montar a url do icone da nuven
     document.querySelector(".icone").src = "https://openweathermap.org/img/wn/" + dados.weather[0].icon + ".png"
 
